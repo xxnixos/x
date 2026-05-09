@@ -136,6 +136,8 @@
     librewolf
     gcc
     lf
+    claude-code
+    claude-monitor
   ]);
 
 
