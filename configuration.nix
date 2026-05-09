@@ -110,8 +110,11 @@
 
   environment.systemPackages = [
     inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default
-    inputs.nixpkgs-stable.legacyPackages.${pkgs.stdenv.hostPlatform.system}.wechat
-  ] ++ (with pkgs; [
+    (import inputs.nixpkgs-stable {
+      system = pkgs.stdenv.hostPlatform.system;
+      config.allowUnfree = true;
+    }).wechat
+    ] ++ (with pkgs; [
     neovim
     wget
     discord
