@@ -110,10 +110,10 @@
 
   environment.systemPackages = [
     inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default
+    inputs.nixpkgs-stable.legacyPackages.${pkgs.stdenv.hostPlatform.system}.wechat
   ] ++ (with pkgs; [
     neovim
     wget
-    wechat
     discord
     telegram-desktop
     libreoffice

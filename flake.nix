@@ -3,6 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs-stable.url = "github:NixOS/nixpkgs/nixos-25.11";
 
    noctalia = {
      url = "github:noctalia-dev/noctalia-shell";
@@ -10,7 +11,7 @@
     };
   };
 
-  outputs = inputs@{ self, nixpkgs, noctalia, ... }: {
+  outputs = inputs@{ self, nixpkgs, nixpkgs-stable, noctalia, ... }: {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       specialArgs = { inherit inputs; };
