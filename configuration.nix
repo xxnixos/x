@@ -138,6 +138,8 @@
     lf
     claude-code
     claude-monitor
+    nodejs
+    vscode
   ]);
 
 
