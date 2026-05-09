@@ -2,7 +2,7 @@
   description = "NixOS config";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.11";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
    noctalia = {
      url = "github:noctalia-dev/noctalia-shell";

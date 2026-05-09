@@ -35,7 +35,7 @@
     powerManagement.finegrained = false;
     open = false;
     nvidiaSettings = true;
-    package = config.boot.kernelPackages.nvidiaPackages.stable;
+    package = config.boot.kernelPackages.nvidiaPackages.legacy_580;
   };
 
   hardware.graphics = {
@@ -116,9 +116,7 @@
     wechat
     discord
     telegram-desktop
-    docker
     libreoffice
-    mullvad-vpn
     alacritty
     git
     curl
@@ -151,7 +149,6 @@
     "net.ipv4.conf.all.accept_redirects" = 0;
     "net.ipv6.conf.all.accept_redirects" = 0;
     "net.ipv4.conf.all.rp_filter" = 1;
-    "net.ipv4.conf.wg0.rp_filter" = 0;
     "net.ipv4.conf.all.accept_source_route" = 0;
   };
 
