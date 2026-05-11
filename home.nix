@@ -8,16 +8,38 @@
   programs.home-manager.enable = true;
 
   home.packages = with pkgs; [
+    # Browsers
+    librewolf
+
+    # Communication
     discord
     telegram-desktop
-    btop
+
+    # Productivity
     libreoffice
+
+    # Media & graphics
+    obs-studio
     gimp
-    fastfetch
-    librewolf
-    lf
-    claude-code
-    vscode
     eog
-  ];
+
+    # Development - editors & AI
+    vscode
+    claude-code
+
+    # Development - languages & toolchains
+    python314
+    nodejs
+    rustc
+    cargo
+    gcc
+    tree-sitter
+
+    # CLI utilities
+    wget
+    curl
+    btop
+    fastfetch
+    lf  
+    ];
 }

@@ -116,18 +116,10 @@
     }).wechat
     ] ++ (with pkgs; [
     neovim
-    wget
     alacritty
     git
-    curl
     xwayland-satellite
-    python314
-    rustc
-    cargo
-    tree-sitter
     nerd-fonts.hack
-    gcc
-    nodejs
   ]);
 
 
