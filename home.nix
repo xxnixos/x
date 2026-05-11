@@ -7,7 +7,17 @@
 
   programs.home-manager.enable = true;
 
-  home.packages = [
-  # neovim
+  home.packages = with pkgs; [
+    discord
+    telegram-desktop
+    btop
+    libreoffice
+    gimp
+    fastfetch
+    librewolf
+    lf
+    claude-code
+    vscode
+    eog
   ];
 }

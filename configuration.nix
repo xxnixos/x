@@ -117,29 +117,17 @@
     ] ++ (with pkgs; [
     neovim
     wget
-    discord
-    telegram-desktop
-    libreoffice
     alacritty
     git
     curl
-    btop
     xwayland-satellite
     python314
     rustc
     cargo
     tree-sitter
-    obs-studio
-    gimp
     nerd-fonts.hack
-    fastfetch
-    librewolf
     gcc
-    lf
-    claude-code
     nodejs
-    vscode
-    eog
   ]);
 
 
