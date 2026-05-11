@@ -137,9 +137,9 @@
     gcc
     lf
     claude-code
-    claude-monitor
     nodejs
     vscode
+    eog
   ]);
 
 
