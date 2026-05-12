@@ -116,8 +116,6 @@
     }).wechat
     ] ++ (with pkgs; [
     neovim
-    alacritty
-    git
     xwayland-satellite
     nerd-fonts.hack
   ]);

@@ -1,6 +1,12 @@
 { config, pkgs, inputs, ... }:
 
 {
+  imports = [
+    ./home/git.nix
+    ./home/fastfetch.nix
+    ./home/alacritty.nix
+  ];
+
   home.username = "xx";
   home.homeDirectory = "/home/xx";
   home.stateVersion = "25.11";
@@ -39,7 +45,6 @@
     wget
     curl
     btop
-    fastfetch
     lf  
     ];
 }
