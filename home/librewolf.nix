@@ -14,6 +14,10 @@
     profiles.work = {
       id = 1;
       name = "work";
+      settings = {
+        "ui.systemUsesDarkTheme" = 0;
+        "browser.theme.content=theme" = 1;
+      };
     };
   };
 }
