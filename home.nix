@@ -5,6 +5,7 @@
     ./home/git.nix
     ./home/fastfetch.nix
     ./home/alacritty.nix
+    ./home/librewolf.nix
   ];
 
   home.username = "xx";
@@ -15,7 +16,6 @@
 
   home.packages = with pkgs; [
     # Browsers
-    librewolf
 
     # Communication
     discord
