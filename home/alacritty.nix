@@ -17,7 +17,7 @@ in
         bold    = { family = "Hack Nerd Font Mono"; style = "Bold"; };
         italic  = { family = "Hack Nerd Font Mono"; style = "Italic"; };
       };
-      window.opacity = 0.8;
+      window.opacity = 0.85;
       keyboard.bindings = [
         {
           key = "Return";
