@@ -23,6 +23,7 @@
 
     # Productivity
     libreoffice
+    obsidian
 
     # Media & graphics
     obs-studio
