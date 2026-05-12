@@ -87,8 +87,8 @@
   programs.niri.enable = true;
 
   services.xserver.xkb = {
-    layout = "us";
-    variant = "";
+    layout = "us,us";
+    variant = ",intl"
   };
  
   services.printing.enable = true;
