@@ -120,6 +120,7 @@
     neovim
     xwayland-satellite
     nerd-fonts.hack
+    libnotify
   ]);
 
 
