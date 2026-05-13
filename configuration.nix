@@ -121,6 +121,7 @@
     xwayland-satellite
     nerd-fonts.hack
     libnotify
+    brightnessctl
   ]);
 
 
