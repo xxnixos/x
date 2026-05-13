@@ -79,7 +79,7 @@
 
 
   services.displayManager.gdm.enable = true;
-  # services.desktopManager.gnome.enable = true;
+  services.desktopManager.gnome.enable = true;
   programs.niri.enable = true;
 
   services.xserver.xkb = {

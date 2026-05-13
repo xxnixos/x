@@ -24,7 +24,6 @@
     # Productivity
     libreoffice
     obsidian
-    nautilus
 
     # Media & graphics
     obs-studio
