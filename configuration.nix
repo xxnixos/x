@@ -20,42 +20,37 @@
     auto-optimise-store = true;
   };
 
-  nix.gc = {
-    automatic = true;
-    dates = "weekly";
-    options = "--delete-older-than 7d";
-    };
 
   environment.sessionVariables = {
     NIXOS_OZONE_WL = "1";
-    LIBVA_DRIVER_NAME = "nvidia";
-    __GLX_VENDOR_LIBRARY_NAME = "nvidia";
-    NVD_BACKEND = "direct";
   };
 
   hardware.bluetooth.enable = true;
 
   hardware.nvidia = {
     modesetting.enable = true;
-    powerManagement.enable = false;
-    powerManagement.finegrained = false;
-    open = false;
+    powerManagement.enable = true;
+    powerManagement.finegrained = true;
+    open = true;
     nvidiaSettings = true;
-    package = config.boot.kernelPackages.nvidiaPackages.legacy_580;
+    package = config.boot.kernelPackages.nvidiaPackages.stable;
+    prime = {
+      offload = {
+        enable = true;
+	enableOffloadCmd = true;
+      };
+      amdgpuBusId = "PCI:101:0:0";
+      nvidiaBusId = "PCI:100:0:0";
+    };
   };
 
   hardware.graphics = {
     enable = true;
     enable32Bit = true;
   };
-
-  fileSystems."/mnt/data" = {
-  device = "/dev/disk/by-uuid/7f6f0b22-5ccd-477a-b345-60bd21584700";
-  fsType = "ext4";
-  };
   
   services.xserver.enable = true;
-  services.xserver.videoDrivers = [ "nvidia" ];
+  services.xserver.videoDrivers = [ "amdgpu" "nvidia" ];
 
 
   time.timeZone = "America/New_York";
