@@ -79,7 +79,7 @@
 
 
   services.displayManager.gdm.enable = true;
-  services.desktopManager.gnome.enable = true;
+  # services.desktopManager.gnome.enable = true;
   programs.niri.enable = true;
 
   services.xserver.xkb = {
@@ -129,6 +129,7 @@
   services.mullvad-vpn.enable = true;
   virtualisation.docker.enable = true;
 
+  boot.kernelParams = [ "amd_pstate=active" ];
 
   boot.kernel.sysctl = {
     "kernel.kptr_restrict" = 2;
