@@ -20,7 +20,7 @@
     auto-optimise-store = true;
   };
 
-  swapDevices = [ { device = "/var/lib/swapfile"; size = 16 * 1024; } ];
+  swapDevices = [ { device = "/var/lib/swapfile"; size = 8 * 1024; } ];
 
   environment.sessionVariables = {
     NIXOS_OZONE_WL = "1";
