@@ -31,8 +31,8 @@
     eog
 
     # Development - editors & AI
-    vscode
     claude-code
+    flyctl
 
     # Development - languages & toolchains
     python314
