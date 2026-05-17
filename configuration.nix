@@ -130,16 +130,13 @@
   services.mullvad-vpn.enable = true;
   virtualisation.docker.enable = true;
 
-  services.logind = {
-      lidSwitch = "suspend";
-      lidSwitchExternalPower = "suspend";
-      settings.Login = {
-        HandlePowerKey="suspend";
-        IdleAction="suspend";
-        IdleActionSec="30min";
-      };
-  };
-
+  services.logind.settings.Login = {
+    HandleLidSwitch = "suspend";
+    HandleLidSwitchExternalPower = "suspend";
+    HandlePowerKey = "suspend";
+    IdleAction = "suspend";
+    IdleActionSec = "30min";
+  }; 
 
   boot.kernelParams = [ "amd_pstate=active" ];
 
