@@ -122,12 +122,24 @@
     nerd-fonts.hack
     libnotify
     brightnessctl
+    swayidle
   ]);
 
 
   # List services that you want to enable:
   services.mullvad-vpn.enable = true;
   virtualisation.docker.enable = true;
+
+  services.logind = {
+      lidSwitch = "suspend";
+      lidSwitchExternalPower = "suspend";
+      extraConfig = ''
+        HandlePowerKey=suspend
+        IdleAction=suspend
+        IdleActionSec=30min
+      '';
+  };
+
 
   boot.kernelParams = [ "amd_pstate=active" ];
 
