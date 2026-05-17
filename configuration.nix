@@ -134,9 +134,9 @@
       lidSwitch = "suspend";
       lidSwitchExternalPower = "suspend";
       settings.Login = {
-        HandlePowerKey=suspend
-        IdleAction=suspend
-        IdleActionSec=30min
+        HandlePowerKey="suspend";
+        IdleAction="suspend";
+        IdleActionSec="30min";
       };
   };
 
